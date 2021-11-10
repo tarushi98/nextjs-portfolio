@@ -1,23 +1,50 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
+import profilepic from "../public/Images/me.jpg"
 
-export default function Home() {
+const ProfileImage = () => (
+  <Image
+      src = {profilepic}
+      className = "rounded-full"
+      height={120}
+      width={120}
+      alt = {"This pic was supposed to show how I look"}
+  />
+)
+const NavBar=()=>
+(<>
+    <nav className="flex flex-row space-x-4 mt-8">
+        <button className="border-4 rounded-lg p-4 sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png"/></button>
+        <Link href="/" className="active:text-black"><p className="text-2xl text-gray-500 hover:underline hover:text-black">Home</p></Link>
+        <p className="text-2xl text-gray-500 hover:underline hover:text-black">About</p>
+        <p className="text-2xl text-gray-500 hover:underline hover:text-black">Projects</p>
+        <p className="text-2xl text-gray-500 hover:underline hover:text-black">Blog</p>
+        <p className="text-2xl text-gray-500 hover:underline hover:text-black">Contact</p>
+    </nav>
+  </>
+)
+function Home() {
+
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi! I am Tarushi Pathak. I am a fourth year student pursuing BTech in Computer Science Engineering from SRM IST, India.I will be interning with Amazon this winter as a Programmer Analyst. This website is ,currently, a work in progress ✨</p>
-        <p>
-           Current Tech Stack : NextJs
-        </p>
-      </section>
-      <Link href = "/posts/newpage">
-         Navigate if you want to see a mess of website page ⚙️
-      </Link>
-    </Layout>
+    <>
+      <div className="container">
+            <NavBar/>
+            <div className="flex flex-row justify-between mt-20">
+                <div className="flex flex-col">
+                    <p className="font-bold text-6xl">TARUSHI PATHAK</p>
+                    <p className="text-2xl p-1 text-gray-500">Programmer Analyst Intern <span className="font-bold text-black">@Amazon India</span></p>
+                    <p className="text-lg mt-8 text-gray-500">I make cool stuff, be it a website or a robot 🤖.Currently working on this one!🔨🚧</p>
+                </div>
+                <div class="flex-none">
+                    <ProfileImage/>
+                </div>
+            </div>      
+
+
+        </div>    
+  </>
   )
 }
+
+export default Home;
