@@ -15,14 +15,17 @@ const ProfileImage = () => (
 )
 const NavBar=()=>
 (<>
-    <nav className="flex flex-row space-x-4 mt-8">
-        <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
-        <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
-        <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p>
-        <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p>
-        <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p>
-        <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p>
-    </nav>
+    <div className="flex flex-row justify-between mt-8">
+      <nav className="flex-none flex-row space-x-4">
+          <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
+          <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
+          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p>
+          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p>
+          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p>
+          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p>
+      </nav>
+      <p className="text-md sm:text-xl sm:mx-20">⛈️ 19°C <br/>Thunderstorm</p>
+    </div>
   </>
 )
 function Home() {
@@ -31,13 +34,13 @@ function Home() {
     <>
       <div className="container">
             <NavBar/>
-            <div className="flex flex-col-reverse mt-8 sm:flex-row sm:justify-between sm:mt-20">
+            <div className="flex flex-col-reverse mt-10 sm:flex-row sm:justify-between sm:mt-20">
                 <div className="flex flex-col sm:ml-4">
                     <p className="font-bold text-4xl sm:text-6xl">TARUSHI PATHAK</p>
                     <p className="text-gray-500 text-md m-1 sm:text-2xl sm:p-1">Programmer Analyst Intern <span className="font-bold text-black">@Amazon India</span></p>
                     <p className="text-gray-500 text-md mt-5 ml-1 sm:text-lg sm:mt-8 sm:ml-2 ">I make cool stuff, be it a website or a robot 🤖. Currently working on this one!🔨🚧</p>
                 </div>
-                <div className="ml-2 mb-6 flex-none">
+                <div className="ml-2 mb-6 flex-none sm:mx-20">
                     <ProfileImage/>
                 </div>
             </div>     
