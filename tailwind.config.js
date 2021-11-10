@@ -8,7 +8,11 @@ module.exports = {
       },
       container:{
         center:true,
-        padding:'20rem',
+        padding: {
+          DEFAULT:'1rem',
+          sm:'20rem',
+        }
+
       }
   },
   variants: {

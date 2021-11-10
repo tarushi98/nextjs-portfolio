@@ -1,0 +1,22 @@
+.gradient{
+    width:15rem;
+    height:16rem;
+    transition:0.2s;
+    border-width: 5px 5px 5px 5px;
+    border-image: linear-gradient(45deg,blue,purple);
+    border-image-slice: 9;
+    border-style: solid;
+}
+
+.gradient:hover{
+    transform:scale(1.1);
+}
+
+@media only screen and (max-width:600px)
+{
+    .gradient{
+        width:18rem;
+        height:12rem;
+        margin-top:10px;
+    }
+}
