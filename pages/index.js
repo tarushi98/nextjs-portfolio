@@ -36,7 +36,7 @@ function Home() {
                     <p className="text-2xl p-1 text-gray-500">Programmer Analyst Intern <span className="font-bold text-black">@Amazon India</span></p>
                     <p className="text-lg mt-8 text-gray-500">I make cool stuff, be it a website or a robot 🤖.Currently working on this one!🔨🚧</p>
                 </div>
-                <div class="flex-none">
+                <div className="flex-none">
                     <ProfileImage/>
                 </div>
             </div>      
