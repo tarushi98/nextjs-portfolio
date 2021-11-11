@@ -97,6 +97,18 @@ function Home() {
                 <p className="text-xl text-gray-700 hover:underline">check out all</p>
                 <img src="https://img.icons8.com/material-two-tone/24/000000/long-arrow-right.png" className="animate-pulse"/>
       </div>
+
+      <div className="bg-blue-700 mt-16 ml-24 w-9/12">
+            <p className="font-bold text-xl text-white pt-10 pl-10 pr-10">Subscribe to the Newsletter</p>
+            <p className="text-md text-white pl-10 pr-10 pt-1 pb-6">Get articles written by me , right to your inbox , the moment they are published. </p>
+            <div className="flex flex-row space-x-2 pb-10">
+              <input className="ml-20 w-1/2 mb-10 p-2 rounded-sm placeholder-gray-500 placeholder-opacity-75" placeholder="yourname@example.com"/>
+              <button className="rounded-sm bg-white w-40 h-10 hover:bg-pink-400">Subscribe</button>
+            </div>
+      </div>
+
+      <div className="mt-96">sPACE</div>
+
   </>
   )
 }
