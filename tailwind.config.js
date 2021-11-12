@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -11,7 +12,10 @@ module.exports = {
         padding: {
           DEFAULT:'1rem',
           sm:'20rem',
-        }
+        },
+      colors:{
+        lime:colors.lime,
+      }
 
       }
   },

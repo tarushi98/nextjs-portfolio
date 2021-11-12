@@ -6,6 +6,7 @@ import homeStyles from './CSS/home.module.css'
 import art from '../public/Images/art.png';
 import code from '../public/Images/programmer.png';
 import stars from '../public/Images/stars.png';
+import spotify from '../public/Images/open-graph-default.png'
 
 const ProfileImage = () => (
   <Image
@@ -34,6 +35,13 @@ const Stars = () => (
         alt = "Random"
       />
 )
+const Spotify = () => (
+  <Image
+      src = {spotify}
+      className="rounded-lg"
+      alt = "logo"
+    />
+)
 function Home() {
 
   return (
@@ -49,7 +57,7 @@ function Home() {
         </div>
      </div>     
 
-      <p className="font-bold text-3xl sm:text-5xl sm:ml-4 mt-10">FEATURED POSTS</p> 
+      <p className="font-bold text-3xl sm:text-5xl sm:ml-4 mt-10">FEATURED PROJECTS</p> 
       <div className="flex flex-col mt-2 sm:mt-6 sm:flex-row sm:space-x-6 sm:ml-10">
               <div className={homeStyles.gradient}>
                     <p className="text-lg p-4 sm:text-xl sm:mt-2">Project Search Bar:<br/> Built To Fight Misinformation,Featured By Streamlit </p>
@@ -98,16 +106,28 @@ function Home() {
                 <img src="https://img.icons8.com/material-two-tone/24/000000/long-arrow-right.png" className="animate-pulse"/>
       </div>
 
-      <div className="bg-blue-700 mt-16 ml-24 w-9/12">
-            <p className="font-bold text-xl text-white pt-10 pl-10 pr-10">Subscribe to the Newsletter</p>
+      <div className="bg-blue-700 mt-16 sm:ml-24 sm:w-9/12">
+            <p className="font-bold text-xl text-white pt-10 pl-10 pr-10">SUBSCRIBE TO THE NEWSLETTER</p>
             <p className="text-md text-white pl-10 pr-10 pt-1 pb-6">Get articles written by me , right to your inbox , the moment they are published. </p>
             <div className="flex flex-row space-x-2 pb-10">
-              <input className="ml-20 w-1/2 mb-10 p-2 rounded-sm placeholder-gray-500 placeholder-opacity-75" placeholder="yourname@example.com"/>
-              <button className="rounded-sm bg-white w-40 h-10 hover:bg-pink-400">Subscribe</button>
+              <input className="ml-10 sm:ml-20 w-1/2 mb-10 p-2 rounded-sm placeholder-gray-500 placeholder-opacity-75" placeholder="yourname@example.com"/>
+              <button className="rounded-sm bg-white w-20 h-10 text-md sm:w-40 hover:bg-red-500">Subscribe</button>
             </div>
       </div>
 
-      <div className="mt-96">sPACE</div>
+      <div className="flex flex-row space-x-4 mt-28 sm:ml-10">
+           <div className="w-24 h-10"><Spotify/></div>
+           <p className="text-lg mt-2 text-gray-500">Not Playing</p>
+      </div>
+
+      <div className="border-t-2 border-gray-700 w-80 ml-2 mt-8 sm:ml-10 sm:w-full"/>
+      <div className="flex flex-col space-y-4 mt-6 mb-16 ml-10 sm:ml-28">
+            <Link href="/"><p className="text-xl text-gray-500 hover:underline hover:text-black">Home</p></Link>
+            <Link href="https://www.linkedin.com/in/tarushi-pathak-6b7b5b177/"><p className="text-xl text-gray-500 hover:underline hover:text-black">LinkedIn</p></Link>
+            <Link href="https://github.com/tarushi98"><p className="text-xl text-gray-500 hover:underline hover:text-black">Github</p></Link>
+            <Link href=""><p className="text-xl text-gray-500 hover:underline hover:text-black">Contact</p></Link>
+
+      </div>
 
   </>
   )
