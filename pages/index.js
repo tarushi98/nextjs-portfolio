@@ -57,7 +57,7 @@ function Home() {
       <div className="flex flex-col-reverse mt-10 sm:flex-row sm:justify-between sm:mt-18">
         <div className="flex flex-col sm:ml-4">
           <p className="font-bold text-4xl sm:text-6xl">TARUSHI PATHAK</p>
-          <p className="text-gray-500 text-md m-1 sm:text-2xl sm:p-1">Programmer Analyst Intern <span className="font-bold text-black">@Amazon India'22</span></p>
+          <p className="text-gray-500 text-md m-1 sm:text-2xl sm:p-1">Programmer Analyst Intern <span className="font-bold text-black">@Amazon India[2022]</span></p>
           <p className="text-gray-500 text-md mt-5 ml-1 sm:text-lg sm:mt-8 sm:ml-2 ">I make cool stuff, be it a website or a robot 🤖. Currently working on this one!🔨🚧</p>
         </div>
         <div className="ml-2 mb-6 flex-none sm:mx-20">
