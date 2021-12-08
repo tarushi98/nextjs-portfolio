@@ -45,10 +45,10 @@ return (<>
       <nav className="flex flex-row space-x-4">
           <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
           <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
-          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p>
-          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p>
-          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p>
-          <p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p>
+          <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
+          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
+          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
+          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
       </nav>
       <div className="flex flex-row space-x-1.5 sm:mr-16">{recDesc}</div>
     </div>
