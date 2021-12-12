@@ -46,7 +46,7 @@ return (<>
           <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
           <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
           <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
-          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
+          <Link href="/projects"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
           <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
           <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
       </nav>
