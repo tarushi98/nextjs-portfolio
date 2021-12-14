@@ -43,11 +43,11 @@ const Blogs = () => (
         <p className="font-bold text-4xl mt-10 sm:ml-6">TECH BLOGS</p>
         <div className="flex flex-col space-y-8 mt-5 sm:ml-8">
                 <div className="flex flex-row space-x-10 sm:space-x-36">
-                        <Link href="https://medium.com/analytics-vidhya/classifying-asteroids-using-ml-a-beginners-tale-part-1-f4385458f13"><p className="text-md sm:text-2xl hover:underline">Classifying Asteroids Using ML : A beginner’s tale (Part 1)<br/><span className="italic text-gray-500 text-md">Machine Learning,Astronomy</span></p></Link>
+                        <Link href="https://medium.com/analytics-vidhya/classifying-asteroids-using-ml-a-beginners-tale-part-1-f4385458f13"><p className="text-md sm:text-2xl hover:underline">Classifying Asteroids Using ML (Part 1)<br/><span className="italic text-gray-500 text-md">Machine Learning,Astronomy</span></p></Link>
                         <p className="text-md sm:text-2xl">Jul 12,2020</p>
                 </div>
                 <div className="flex flex-row space-x-10 sm:space-x-36">
-                        <Link href="https://medium.com/analytics-vidhya/classifying-asteroids-using-ml-a-beginners-tale-part-2-1e379f7a781d"><p className="text-md sm:text-2xl hover:underline">Classifying Asteroids Using ML : A beginner’s tale (Part 2)<br/><span className="italic text-gray-500 text-md">Machine Learning,Astronomy</span></p></Link>
+                        <Link href="https://medium.com/analytics-vidhya/classifying-asteroids-using-ml-a-beginners-tale-part-2-1e379f7a781d"><p className="text-md sm:text-2xl hover:underline">Classifying Asteroids Using ML (Part 2)<br/><span className="italic text-gray-500 text-md">Machine Learning,Astronomy</span></p></Link>
                         <p className="text-md sm:text-2xl">Jul 13,2020</p>
                 </div>
                 <div className="flex flex-row space-x-10 sm:space-x-56">
