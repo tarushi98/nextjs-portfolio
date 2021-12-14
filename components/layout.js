@@ -48,7 +48,7 @@ return (<>
           <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
           <Link href="/projects"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
           <Link href="/blog"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
-          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
+          <Link href="/contact"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
       </nav>
       <div className="flex flex-row space-x-1.5 sm:mr-16">{recDesc}</div>
     </div>
@@ -70,7 +70,7 @@ const Footer = () =>{
                         <Link href="/"><p className="text-xl text-gray-500 hover:underline hover:text-black">Home</p></Link>
                         <Link href="https://www.linkedin.com/in/tarushi-pathak-6b7b5b177/"><p className="text-xl text-gray-500 hover:underline hover:text-black">LinkedIn</p></Link>
                         <Link href="https://github.com/tarushi98"><p className="text-xl text-gray-500 hover:underline hover:text-black">Github</p></Link>
-                        <Link href=""><p className="text-xl text-gray-500 hover:underline hover:text-black">Contact</p></Link>
+                        <Link href="/contact"><p className="text-xl text-gray-500 hover:underline hover:text-black">Contact</p></Link>
 
                 </div>
             </>
