@@ -110,7 +110,7 @@ function Home() {
 
       
       <div className="flex flex-row space-x-2 mt-4 ml-2 mb-2 sm:ml-10 ">
-                <p className="text-xl text-gray-700 hover:underline">check out all</p>
+                <Link href="/blog"><p className="text-xl text-gray-700 hover:underline">check out all</p></Link>
                 <img src="https://img.icons8.com/material-two-tone/24/000000/long-arrow-right.png" className="animate-pulse"/>
       </div>
 

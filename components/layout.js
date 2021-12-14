@@ -47,7 +47,7 @@ return (<>
           <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
           <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
           <Link href="/projects"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
-          <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
+          <Link href="/blog"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
           <Link href="/"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
       </nav>
       <div className="flex flex-row space-x-1.5 sm:mr-16">{recDesc}</div>
