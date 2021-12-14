@@ -28,7 +28,7 @@ const Stars = () => (
 const Blogs = () => (
     <>
         <p className="font-bold text-3xl sm:text-5xl sm:ml-5 mt-10">BLOGS</p>
-        <p className="text-gray-500 mt-4 sm:ml-8">I am an expresssive human being and I can't help it 🐣! Check out my blogs on Art, Tech and Astronomy 🚀!</p>
+        <p className="text-gray-500 mt-4 sm:ml-8">I am an expresssive human being and I cannot help it 🐣! Check out my blogs on Art, Tech and Astronomy 🚀!</p>
         <div className="flex flex-col mt-2 sm:mt-6 sm:flex-row sm:space-x-6 sm:ml-10">
               <div className={homeStyles.gradient}>
                      <p className="w-9/12 ml-10 mt-5 transition duration-700 ease-in-out transform hover:scale-75 sm:mt-10 sm:w-full sm:ml-0"> <Art/> </p>
