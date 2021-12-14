@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Contact = () =>(
         <>
                 <div className="rounded-lg bg-blue-700 mt-16 pb-16 sm:ml-20 sm:w-9/12">
-                    <p className="font-bold text-2xl text-white pt-10 pl-10 pr-10">DON'T BE SHY , SAY HI! 🐨</p>
+                    <p className="font-bold text-2xl text-white pt-10 pl-10 pr-10">DON&apos;T BE SHY , SAY HI! 🐨</p>
                     <p className="text-md text-white pl-10 pr-10 pt-8">NAME</p>
                     <input className="ml-10  w-1/2 p-3 rounded-sm placeholder-gray-500 placeholder-opacity-75" placeholder="Regina Phalenge" type="name" id="email" />
                     <p className="text-md text-white pl-10 pr-10 pt-4">EMAIL</p>
