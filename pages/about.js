@@ -13,7 +13,7 @@ const About = () => (
         <>
             <div className="flex flex-col mt-8 ml-4 space-y-7">
                 <p className="font-bold text-5xl">ABOUT</p> 
-                <p className="text-lg text-gray-500">   Hi! I am Tarushi Pathak. I am from New Delhi India. Currently in my final year of BTECH at SRMIST. I am somebody who likes making new things and writing. Hence , this website! It is my dream to someday be able to make a robot (like TARS from Interstellar or BB8 from Star Wars) or a conscious AI system (like JARVIS) and to meet Phoebe Waller Bridge.I mean isn&apos;t that women amazing ? ❤️ <br/><br/> On my off days you'll find me looking at the stars, lost in a book or maybe doing nothing at all.</p>
+                <p className="text-lg text-gray-500">   Hi! I am Tarushi Pathak. I am from New Delhi India. Currently in my final year of BTECH at SRMIST. I am somebody who likes making new things and writing. Hence , this website! It is my dream to someday be able to make a robot (like TARS from Interstellar or BB8 from Star Wars) or a conscious AI system (like JARVIS) and to meet Phoebe Waller Bridge.I mean isn&apos;t that women amazing ? ❤️ <br/><br/> On my days off you&apos;ll find me looking at the stars, lost in a book or maybe doing nothing at all.</p>
                 <Link href="https://drive.google.com/file/d/1izwjsyAAeZ9e8zKHlwR5yoEzpLFaBiUP/view?usp=sharing"><div className="bg-blue-500 rounded-2xl font-bold text-white h-11 w-28 pl-7 pt-2 hover:bg-black">RESUME</div></Link>
             </div>
             <p className="font-bold text-4xl ml-4 mt-10">TIMELINE</p>
@@ -84,7 +84,7 @@ const About = () => (
                         <div className="bg-blue-700 rounded-lg h-52 w-1.5 -my-1 ml-4 sm:h-32 sm:w-1.5"/>
                     </div>
                     <div className="flex flex-col">
-                        <p className="font-bold text-xl pl-1.5 sm:text-2xl">🎒 Graduated From St. Mark’s Senior Secondary Public School,New Delhi,</p>
+                        <p className="font-bold text-xl pl-1.5 sm:text-2xl">🎒 Graduated From St. Mark&apos;s Senior Secondary Public School,New Delhi,</p>
                         <p className="italic text-md text-gray-500 sm:text-lg">CBSE Boards Class 10th And 12th</p>
                         <p className="text-sm text-gray-500 sm:text-lg">2006-2018</p>
                         <p className="text-gray-500 mt-3 text-md sm:text-lg">Graduated from school with 87.75% in my 12th Boards and a 9.6 GPA in class 10th.<br/>
