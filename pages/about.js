@@ -12,8 +12,8 @@ const TimeLineItem = () => (
 const About = () => (
         <>
             <div className="flex flex-col mt-8 ml-4 space-y-7">
-                <p className="font-bold text-5xl">ABOUT</p>
-                <p className="text-lg text-gray-500">I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk<br/>I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk<br/>I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk<br/>I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk<br/><br/>I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk<br/>I am currently pursuing my BTECH in CSE from SRM Institute of Science and Technology,Kattankulathur.skjdkjfkdfkjfksdjfkskfcnvcxk</p>
+                <p className="font-bold text-5xl">ABOUT</p> 
+                <p className="text-lg text-gray-500">   Hi! I am Tarushi Pathak. I am from New Delhi India. Currently in my final year of BTECH at SRMIST. I am somebody who likes making new things and writing. Hence , this website! It is my dream to someday be able to make a robot (like TARS from Interstellar or BB8 from Star Wars) or a conscious AI system (like JARVIS) and to meet Phoebe Waller Bridge.I mean isn't that women amazing ? ❤️ <br/><br/> On my off days you'll find me looking at the stars, lost in a book or maybe doing nothing at all.</p>
                 <Link href="https://drive.google.com/file/d/1izwjsyAAeZ9e8zKHlwR5yoEzpLFaBiUP/view?usp=sharing"><div className="bg-blue-500 rounded-2xl font-bold text-white h-11 w-28 pl-7 pt-2 hover:bg-black">RESUME</div></Link>
             </div>
             <p className="font-bold text-4xl ml-4 mt-10">TIMELINE</p>

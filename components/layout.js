@@ -2,6 +2,7 @@ import Link from 'next/link'
 import spotify from '../public/Images/open-graph-default.png'
 import Image from 'next/image'
 import useSWR from "swr";
+import { useState } from 'react'
 
 const Spotify = () => (
     <Image
@@ -29,26 +30,39 @@ function Weather()
 const WeatherStruc = (wdata) => {
     const iconUrl = "http://openweathermap.org/img/w/"+wdata[1]+".png"
     return (
-        <>
-            <img src={iconUrl} width="30%" height="30%"/>
-            <p className="text-md sm:text-xl">{wdata[2]}°C <br/>{wdata[0]}</p>
+        <>  
+            <div className="flex flex-row space-x-2">
+                <img src={iconUrl} width="30%" height="30%"/>
+                <p className="text-md sm:text-xl">{wdata[2]}°C <br/>{wdata[0]}</p>
+            </div>
         </>
 )};
 // Weather End
-
 const NavBar=()=>{
      var recDesc = Weather();
      if(!recDesc) recDesc = "🙊 गड़बड़";
      else recDesc = WeatherStruc(recDesc);
+     const [showMe, setShowMe] = useState(false);
+     function toggle(){
+       setShowMe(!showMe);
+     }
 return (<>
     <div className="flex flex-row justify-between mt-8">
-      <nav className="flex flex-row space-x-4">
-          <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black sm:hidden"><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
-          <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
-          <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
-          <Link href="/projects"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
-          <Link href="/blog"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
-          <Link href="/contact"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
+      <nav className="flex flex-col space-y-4 sm:flex-row sm:space-x-4">
+          <button className="visible border-4 rounded-lg pl-2 pt-2 pb-2 hover:border-black hover:backdrop-blur-lg sm:hidden" onClick={toggle}><img src="https://img.icons8.com/windows/32/000000/menu.png" width="75%"/></button>
+          <div style = {{display: showMe?"block":"none"}}>
+            <Link href="/" className="active:text-black"><p className="text-md text-gray-500 hover:underline">Home</p></Link>
+            <Link href="/about"><p className="text-md text-gray-500 hover:underline">About</p></Link>
+            <Link href="/projects"><p className="text-md text-gray-500 hover:underline">Projects</p></Link>
+            <Link href="/blog"><p className="text-md text-gray-500 hover:underline">Blog</p></Link>
+            <Link href="/contact"><p className="text-md text-gray-500 hover:underline">Contact</p></Link>
+        </div>
+        <Link href="/" className="active:text-black"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Home</p></Link>
+        <Link href="/about"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">About</p></Link>
+        <Link href="/projects"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Projects</p></Link>
+        <Link href="/blog"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Blog</p></Link>
+        <Link href="/contact"><p className="hidden text-2xl text-gray-500 hover:underline hover:text-black sm:block">Contact</p></Link>
+          
       </nav>
       <div className="flex flex-row space-x-1.5 sm:mr-16">{recDesc}</div>
     </div>
